@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/attendee_list.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Lists of Attendees</title>
+</head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <img class="logo_name" src="../static/img/logo-white-transparent.png" alt="logo">
+        </div>
+        <!-- <hr color="white"> -->
+        <ul class="nav-links">
+          <li>
+            <a href="#">
+              <i class='bx bx-grid-alt' ></i>
+              <span class="link_name">Dashboard</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Dashboard</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-user'></i>
+                <span class="link_name">Users</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Users</a></li>
+              <li><a href="#">View</a></li>
+              <li><a href="#">Add</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="admin_dashboard.html">
+              <!-- <i class='bx bx-question-mark' ></i> -->
+              <i class='bx bxs-file-doc' ></i>
+              <span class="link_name">Register</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="admin_dashboard.html">Register Attendee</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="attendee_list.html">
+              <i class='bx bxs-user-detail' ></i>
+              <!-- <i class='bx bx-file'></i> -->
+              <span class="link_name">Attendee</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="attendee_list.html">Attendee</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/logout">
+              <i class='bx bx-log-out'></i>
+              <span class="link_name">Sign Out</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Sign Out</a></li>
+            </ul>
+          </li>
+    </ul>
+      </div>
+      <section class="home-section">
+        <div class="header-dashboard">
+          <i class='bx bx-menu' ></i>
+          <div class="home-content">
+            <span>Admin</span>
+          </div>
+        </div>
+
+        <div>
+            this is attendee table page
+        </div>   
+        
+        </section>
+        <script src="../static/js/admin_dashboard.js"></script>
+</body>
+</html>

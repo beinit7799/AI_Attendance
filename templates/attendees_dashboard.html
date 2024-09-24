@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/attendees_dashboard.css">
+    <title>Attendees</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="../static/img/logo-white-transparent.png">
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="camera">
+            <img src="{{ url_for('video') }}" width="100%" height="100%"/>
+        </div> 
+    
+        <div class="UserDetails">
+            <div>
+            <div class="Profile_image">
+                <img src="../static/img/user1.png" alt="">
+            </div> 
+            <div class="sri">
+               <div>
+                <p class="UserDetails__heading">User Details</p><br><br>
+                <div class="hey">
+                    <p>Name: binit</p><br>
+                <p>Id: 201610</p><br>
+                <p>Phone: 9823696969</p><br>
+                <p>Department: Software</p>
+                </div>
+               </div>
+            </div>
+            </div> 
+            
+
+        </div>
+    </div>
+</body>
+<script src="../static/js/attendees.js"></script>
+</html>

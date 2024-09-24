@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="login" id="login" style="opacity: 1">
+        <div class="login__container" id="login__container">
+                <div class="login-form">
+                <div class="login-form__logo-container">
+                    <img src="../static/img/ai-logo-transparent.png" class="login-form__logo">
+                </div>
+                <p class="login-form__heading-text">Admin Login</p>
+                <p class="login-form__second-text">Your gateway to smart attendance management!</p>
+            
+                <div>
+                    <form method="post" action = "{{ url_for('dashboard') }}" class="login__actual-form">
+                        <div class="login-form__inputs">
+                            <input type="text" name="email_username" placeholder="Email or Username*" class="email-input">
+                        </div>
+                        <div class="login-form__inputs">
+                            <input type="password" name="password" placeholder="Password *" class="password-input" id="login_password">
+                            <i class='bx bx-show' id="bx-show-login" onclick="hidePassword('login')"></i>
+                            <i class='bx bx-hide' id="bx-hide-login" onclick="showPassword('login')"></i>
+                        </div>
+                        <input type="submit" value="Login" class="login-submit">
+                    </form>
+                    <p class="login-form__bottom-text"> Log in to streamline your administrative tasks and enhance workforce tracking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/login.js"></script>
+</body>
+</html>

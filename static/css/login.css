@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    top: 12vh;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    opacity: 1;
+}
+
+.login__container {
+    max-width: 450px;
+    width: 73%;
+    background-color: white;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.cross {
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.cross:hover{
+    color: var(--primary-red);
+}
+
+.login__img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.login-form {
+    padding: 3rem 4rem;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    border-radius: 0px 6px 6px 0px;
+    line-height: 0.8;
+}
+
+.login-form__logo-container, .login-form > p {
+    text-align: center;
+}
+
+.login-form__logo {
+    height: 100px;
+}
+
+.login-form__heading-text {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color:rgb(41, 50, 60);
+    margin: 1.2rem 0 1rem 0;
+}
+.login-form__second-text {
+    font-size: 0.9rem;
+    color: var(--primary-grey);
+    margin: 0 0 3rem 0;
+    line-height: 1.1;
+}
+
+.login-form__inputs {
+    border-bottom: 1px solid #00000080;
+    margin-bottom: 2vh;
+    margin-top: 3.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bx-hide{
+    cursor: pointer;
+}
+#bx-show-login{
+    display: none ;
+    cursor:pointer;
+}
+
+.email-input, .password-input {
+    width: 100%;
+    border: 0px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.login-submit {
+    width: 100%;
+    background-color:rgb(41, 50, 60);
+    color: white;
+    border: 0;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    padding: 0.2rem 0;
+    margin-top: 0.5rem;
+    cursor:pointer;
+    transition: .5s all ease;
+}
+.login-submit:hover {
+    background-color:rgb(16, 63, 97);
+    color: white;
+}
+
+.login__actual-form{
+    box-shadow: none;
+}
+.login-form__bottom-text {
+    margin-top: 4vh;
+    font-size: 0.9rem;
+    color: var(--primary-black);
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* Large Devices (Desktops - Small to Medium Screens) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .login__container {
+        width: 95%;
+    }
+
+    .login-form__heading-text {
+        font-size: 1.6rem;
+    }
+}
+
+/* Medium Devices (Tablets - Landscape) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .login__container {
+        width: 95%;
+    }
+    .login-form__logo {
+       height: 65px;
+    }
+    .login-form__heading-text {
+        font-size: 1.5rem;
+    }
+
+    .login-form__second-text, .login-form__bottom-text {
+        font-size: 0.8rem;
+    }
+    .join-now {
+        font-size: 1rem;
+    }
+    .login-form__forget-pass > a {
+        font-size: 0.75rem;
+    }
+    .email-input, .password-input {
+        font-size: 0.9rem;
+    }
+
+    .login-submit {
+        font-size: 1rem;
+    }
+    .login-form {
+        padding: 3rem 3rem;
+    }
+}
+
+
+/* Small Devices (Tablets - Portrait) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .login__container {
+        grid-template-columns: 100%;
+        width: 70%;
+    }
+    .login-form__logo {
+        height: 62px;
+    }
+    .login__img {
+        display: none;
+    }
+
+    .login-form__heading-text {
+        font-size: 1.4rem;
+    }
+
+    .login-form__second-text, .login-form__bottom-text {
+        font-size: 0.8rem;
+    }
+    .join-now {
+        font-size: 1rem;
+    }
+    .login-form__forget-pass > a {
+        font-size: 0.75rem;
+    }
+    .email-input, .password-input {
+        font-size: 0.9rem;
+    }
+
+    .login-submit {
+        font-size: 1rem;
+    }
+}
+
+/* Small Devices (Mobile Small - Portrait)*/
+@media screen and (max-width: 576px) {
+    .login__container {
+        width: 90%;
+        grid-template-columns: 100%;
+    }
+    .login-form__logo {
+        height: 60px;
+    }
+
+    .login__img {
+        display: none;
+    }
+
+    .login-form__heading-text {
+        font-size: 1.3rem;
+    }
+
+    .login-form__second-text, .login-form__bottom-text {
+        font-size: 0.75rem;
+    }
+    .join-now {
+        font-size: 0.9rem;
+    }
+    .login-form__forget-pass > a {
+        font-size: 0.7rem;
+    }
+    .email-input, .password-input {
+        font-size: 0.8rem;
+    }
+
+    .login-submit {
+        font-size: 0.9rem;
+    }
+
+    .login-form {
+        padding: 2.5rem 2rem;
+    }
+}
+

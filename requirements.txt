@@ -1,0 +1,12 @@
+Flask
+Flask-Bcrypt
+Flask-WTF
+Flask-Login
+numpy
+opencv-python
+pywin32
+scikit-learn
+pickle5
+Flask-SQLAlchemy
+WTForms
+face_recognition
